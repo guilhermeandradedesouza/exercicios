@@ -1,9 +1,8 @@
 from random import randint
 z=b=0
-a=randint(0,10)
-while b!=a:
+while b!=randint(0,10):
     b=int(input('um numero de 0 a 10:'))
-    if a==b: print('\033[32mvoce chutou o numero certo :)')
+    if randint(0,10)==b: print('\033[32mvoce chutou o numero certo :)')
     else:
         print('voce errou')
         z+=1
