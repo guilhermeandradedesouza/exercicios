@@ -14,5 +14,5 @@ elif g=='while':
         if a[0]==a[1]+b*(11+a[2]):
             a[3]=input('\nquer mais? ')
             if 'sim' in a[3]:
-                a[2]=int(input(f'\033[1;33mobs:É em relação ao numero {a[0]-b}\033[m\nmais quantos? '))
                 a[0]=a[1]
+                a[2]=int(input(f'\033[1;33mobs:É em relação ao numero {a[1]+b*10}\033[m\nmais quantos? '))
