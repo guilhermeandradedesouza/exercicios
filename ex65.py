@@ -1,6 +1,6 @@
 c='sim'
 b=[0,0,0,0,0]
-a=int(input('quntos numeros voce quer? '))
+a=int(input('quantos numeros voce quer? '))
 while 'sim' in c:
     for g in range(0,a):
         if g==0:
