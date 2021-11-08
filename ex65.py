@@ -11,10 +11,10 @@ while 'sim' in c:
             b[1]=b[2]
         if g>0:
             b[2]=int(input('numero:'))
-        if g==a:
+        if g==a-1:
             c=input('voce quer continuar? ')
             if 'sim' in c:
                 a+=int(input('mais quantas? '))
         b[3]+=1
         b[4]+=b[2]
-print(f'o maior numero foi {b[0]}\no menor foi {b[1]} e a media entre esses numeros foi de {b[4]/b[3]}')
+print(f'\n\033[1mO maior numero foi {b[0]} e o menor foi {b[1]}.\nA media entre esses numeros foi de {b[4]/b[3]:.0f}.')
