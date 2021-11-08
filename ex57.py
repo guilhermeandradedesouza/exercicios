@@ -1,6 +1,4 @@
-s=''
-while s!='M' and s!='F':
-    s=input('sexo:').upper
-    if s not in "MF":
-        print('digite novamente')
+s=input('sexo:)
+while 'MF' not in s:
+    s=input('invalido, digite novamente:').upper
 print(f'o sexo digitado {s}')
