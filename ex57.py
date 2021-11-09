@@ -1,4 +1,5 @@
 s=input('sexo:')
-while 'MF' not in s:
+while s not in 'MF':
     s=input('invalido, digite novamente:').upper()
-print(f'o sexo digitado {s}')
+if 'M' in s:print('o sexo digitado foi masculino')
+else:print('\nsexo feminino')
