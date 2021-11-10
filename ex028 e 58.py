@@ -6,7 +6,7 @@ while b[0]!=b[2]:
         print('é maior')
         b[1]+=1
     elif b[0]>10:
-        print('\033[1;31mde 0 a 10\033[m')
+        print('\033[1;31mde 0 a 10.\033[m')
     else:
         print('é menor')
         b[1]+=1
