@@ -8,7 +8,7 @@ while 'sair' not in s:
     elif 'multiplicar' in s: print(f'o produto desses valores equivale a {n[0]*n[1]}')
     elif 'verificar' in s:
         if n[0]>n[1]: print(f'{n[0]}>{n[1]}')
-        elif n[0]==n[1]: print(f'{n[0]}={n[1]}')
+        elif n[0]==n[1]: print(f'{n[0]}={n[1]}, são iguais')
         else: print(f'{n[1]}>{n[0]}')
     else:
         if 'novos' in s:print('insira os numeros novamente.\n')
