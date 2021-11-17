@@ -18,4 +18,4 @@ while a!=0:
     b[3]+=1
     b[4]+=b[2]
     g+=1
-print(f'\n\033[1mO maior numero foi {b[0]} e o menor foi {b[1]}.\nA media entre esses numeros foi de {b[4]/b[3]:.1f}.')
+print(f'\n\033[1mO maior numero foi {b[0]} e o menor foi {b[1]}.\nA media entre esses numeros foi de {b[4]/b[3]:.1f}.' if b[3]!=0 else '\033[1;31m'+'\nvoce digitou zero\n'.upper()+'\033[4m'+'invalido'.upper())
