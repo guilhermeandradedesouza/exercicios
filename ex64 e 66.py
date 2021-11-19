@@ -5,4 +5,4 @@ while a[1]!=999:
     if a[1]==999:break
     a[0]+=1
     a[2]+=a[1]
-print(f'\nvoce digitou {a[0]-1} numeros e a soma dos números foi {a[2]}.')
+print(f'\nvoce digitou {a[0]} numeros e a soma dos números foi {a[2]}.')
