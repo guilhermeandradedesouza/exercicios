@@ -12,4 +12,4 @@ while True:
     else:break
     g+=1
     print(f'Voce venceu, {a-n}+{n}={a} é {pm}\n\033[33m{g+1} ROUND\033[m')
-print(f'\033[31m\nVoce perdeu com o total de {g} vitorias {a}' if g>0 else f'\nVoce perdeu {a}')
+print(f'\033[31m\nVoce perdeu com o total de {g} vitorias' if g>0 else f'\nVoce perdeu')
