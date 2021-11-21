@@ -11,7 +11,7 @@ while True:
     b=int(b)
     if 'f' in a:
         f+=1
-        if b<=18:menordeidade+=1
+        if b<20:menordeidade+=1
     while True:
         c=input('\nquer continuar? ')
         if c=='sim' or c=='s' or c=='n' or c=='nao' or c=='não':break
