@@ -5,7 +5,7 @@ while True:
     while True:
         p=input('preço do produto:')
         if p.isnumeric()==True:break
-    p=int(p)
+    p=float(p)
     if p>1000:maior1000+=1
     if g==0:mp=p
     elif p<mp:
