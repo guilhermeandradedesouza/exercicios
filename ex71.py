@@ -1,17 +1,18 @@
 c50=c20=c10=c1=0
 n=int(input('valor a ser sacado:'))
-while True:
-    if n>=50:
-        n-=50
-        c50+=1
-    elif n>=20:
-        n-=20
-        c20+=1
-    elif n>=10:
-        n-=10
-        c10+=1
-    elif n>=1:
-        n-=1
-        c1+=1
-    else:break
-print(f'cedulas de 50:{c50}\ncedulas de 20:{c20}\ncedulas de 10:{c10}\ncedulas de 1:{c1}')
+while n>=50:
+    n-=50
+    c50+=1
+if c50>=1:print(f'{c50} cédulas de 50 reais.')
+while n>=20:
+    n-=20
+    c20+=1
+if c20>=1:print(f'{c20} cédulas de 20 reais.')
+while n>=10:
+    n-=10
+    c10+=1
+if c10>=1:print(f'{c10} cédulas de 10 reais.')
+while n>=1:
+    n-=1
+    c1+=1
+if c1>=1:print(f'{c1} cédulas de 1 real.')
