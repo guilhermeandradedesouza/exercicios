@@ -2,11 +2,12 @@ from random import randint
 g=r=0
 while True:
     n=''
-    r=0
+    if r=='resposta infinita':pass
+    else:r=0
     if g==0:print('jogo do impar ou par\n'.upper()+'\033[1;33m'+'1 Round'.upper()+'\033[m')
     while n.isnumeric()!=True:
         n=input('numero:'.upper())
-        if n=='resposta':r=1
+        if 'resposta' in n:r=1
     n=int(n)
     if n>2:a=randint(0,n)+n
     else:a=randint(0,11)+n
