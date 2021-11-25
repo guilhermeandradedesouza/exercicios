@@ -11,7 +11,9 @@ while True:
     n=int(n)
     if n>2:a=randint(0,n)+n
     else:a=randint(0,11)+n
-    pm=input(f'impar ou par? a resposta é {a} ' if r==1 or r=='resposta infinita' else 'impar ou par? ')
+    pm = input(f'impar ou par? a resposta é {a} ' if r == 1 or r == 'resposta infinita' else 'impar ou par? ')
+    while pm.isnumeric()!=False:
+        pm=input(f'impar ou par? a resposta é {a} ' if r==1 or r=='resposta infinita' else 'impar ou par? ')
     if a%2!=0 and pm=='p' or pm=='par':break
     if a%2==0 and pm=='i' or pm=='impar':break
     g+=1
