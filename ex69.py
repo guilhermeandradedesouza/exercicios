@@ -1,5 +1,5 @@
 c=a=b=m=f=idademenorque20=maiorque18=p=0
-while True:
+while c!='n' and c!='nao' and c!='não':
     while True:
         a=input('qual seu sexo? ' if a==0 else '\nqual seu sexo? ')
         if 'm' in a:m+=1
@@ -16,5 +16,4 @@ while True:
     while True:
         c=input('\nquer continuar? ')
         if c=='sim' or c=='s' or c=='n' or c=='nao' or c=='não':break
-    if c=='n' or c=='nao' or c=='não':break
 print(f'\033[1m\npessoas:{p}\ntotal de mulheres:{f}\nmulheres menores de 20:{idademenorque20}\nhomens:{m}\nmaiores de 18 anos:{maiorque18}'.upper())
