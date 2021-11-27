@@ -13,6 +13,6 @@ while c!='n' and c!='nao' and c!='não':
         f+=1
         if b<20:idademenorque20+=1
     if b>18:maiorque18+=1
-    c = input('\nquer continuar? ').lower()
-    while c[0]!='s' and c[0]!='n':c=input('\nquer continuar? ').lower()
+    c = input('\nquer continuar? ').strip().lower()
+    while c[0]!='s' and c[0]!='n':c=input('\nquer continuar? ').strip().lower()
 print(f'\033[1m\npessoas:{p}\ntotal de mulheres:{f}\nmulheres menores de 20:{idademenorque20}\nhomens:{m}\nmaiores de 18 anos:{maiorque18}'.upper())
