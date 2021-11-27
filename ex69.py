@@ -1,9 +1,9 @@
 c=a=b=m=f=idademenorque20=maiorque18=p=0
 while c!='n' and c!='nao' and c!='não':
     while True:
-        a=input('qual seu sexo? ' if a==0 else '\nqual seu sexo? ')[0].upper()
-        if a=='M':m+=1
-        if a=='F' or a=='M':break
+        a=input('qual seu sexo? ' if a==0 else '\nqual seu sexo? ').upper()
+        if a[0]=='M':m+=1
+        if a[0]=='F' or a[0]=='M':break
     p+=1
     while True:
         b=input('\nquantos anos voce tem? ')
