@@ -1,12 +1,14 @@
 n=p=mp=c=ptotal=maior1000=nmp=g=0
 while True:
     n=input('nome do produto:' if g==0 else '\nnome do produto:')
-    if g==0:nmp=n
+
     p = input('preço do produto:')
     while p.isnumeric()!=True:p=input('preço do produto:')
     p=float(p)
     if p>1000:maior1000+=1
-    if g==0:mp=p
+    if g==0:
+        mp=p
+        nmp=n
     elif p<mp:
         mp=p
         nmp=n
