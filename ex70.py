@@ -6,10 +6,7 @@ while True:
     while p.isnumeric()!=True:p=input('preço do produto:')
     p=float(p)
     if p>1000:maior1000+=1
-    if g==0:
-        mp=p
-        nmp=n
-    elif p<mp:
+    if g==0 or p<mp:
         mp=p
         nmp=n
     ptotal+=p
