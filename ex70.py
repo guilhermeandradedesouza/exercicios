@@ -1,7 +1,6 @@
 n=p=mp=c=ptotal=maior1000=nmp=g=0
 while True:
     n=input('nome do produto:' if g==0 else '\nnome do produto:')
-
     p = input('preço do produto:')
     while p.isnumeric()!=True:p=input('preço do produto:')
     p=float(p)
