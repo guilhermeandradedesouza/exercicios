@@ -1,6 +1,5 @@
 c50=c20=c10=c1=0
 n=int(input('valor a ser sacado:'))
-print('\n')
 while n>=50:
     n-=50
     c50+=1
