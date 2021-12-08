@@ -12,7 +12,7 @@ else:
     v1=float(input('nota da v1:'))
     simulado=float(input('nota do simulado:'))
     m=(p1+p2)*0.4+v1+simulado
-    pf=(6-m)*1.0
+    pf=(6-m)
     if m<=6:
         pergunta=input('quer saber sua nota? ')
         if pergunta=='sim' or pergunta=='s':
