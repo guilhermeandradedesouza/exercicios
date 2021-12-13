@@ -22,30 +22,28 @@ for a in range (0,4):
         f[0]+=1
         if i<20:
             f[1]+=1
-    elif 'emo' in s and n=='sas' or n=='sasuke':
-        print("\033[1mSASKEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE!!!")
-        mixer.init()
-        mixer.music.load('Naruto gritando Sasuke_160k.mp3')
-        mixer.music.set_volume(0.18)
-        mixer.music.play()
-        sleep(1.5)
-        exit()
-    elif 'com' in s:
-        mixer.init()
-        mixer.music.load('HEHE BOI sound effect_160k.mp3')
-        mixer.music.play()
-        sleep(2)
-        exit()
-    elif 'todos' in s:
-        mixer.init()
-        mixer.music.load('C:\\Users\\Ricardo\\Desktop\\Gui\\PACK AUDIOS\\MEMES AUDIO\\13.wav')
-        mixer.music.play()
-        sleep(3.2)
-        exit()
     else:
-        f[2]+=1
-        print('\033[31mSEXO NÃO DEFINIDO CORRETAMENTE.\n\033[1;33mpara masculino, masculino ou m\npara feminino, feminino ou f')
-        t=f'\n\033[33;7m{f[2]} sexos não foram corretamente definidos\033[m'
+        if 'emo' in s and n=='sas' or n=='sasuke':
+            print("\033[1mSASKEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE!!!")
+            mixer.init()
+            mixer.music.load('Naruto gritando Sasuke_160k.mp3')
+            mixer.music.set_volume(0.18)
+            mixer.music.play()
+            sleep(1.5),exit()
+        elif 'com' in s:
+            mixer.init()
+            mixer.music.load('HEHE BOI sound effect_160k.mp3')
+            mixer.music.play()
+            sleep(2),exit()
+        elif 'todos' in s:
+            mixer.init()
+            mixer.music.load('C:\\Users\\Ricardo\\Desktop\\Gui\\PACK AUDIOS\\MEMES AUDIO\\13.wav')
+            mixer.music.play()
+            sleep(3.2),exit()
+        else:
+            f[2]+=1
+            print('\033[31mSEXO NÃO DEFINIDO CORRETAMENTE.\n\033[1;33mpara masculino, masculino ou m\npara feminino, feminino ou f')
+            t=f'\n\033[33;7m{f[2]} sexos não foram corretamente definidos\033[m'
     if a<3:
         print('\033[94;1mproximo\033[m')
     if d[2]=='m':
