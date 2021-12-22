@@ -1,0 +1,6 @@
+times=('Flamengo','Palmeiras','Atlético Mineiro','Grêmio','Athletico Paranaense','Santos','São Paulo','Internacional','Fluminense','Corinthians','Fortaleza','Bahia','Ceará','Cruzeiro','América Mineiro','Atlético Goianiense','Chapecoense','Botafogo','Vasco da Gama','Red Bull Bragantino')
+print('\033[1;107;30m'+'Ranking da CBF para 2022'.upper()+'\033[m')
+print(f'Os cinco primeiros são:{times[:5]}')
+print(f'Os ultimos 4 da tabela são:{times[-4:]}')
+print(f'os times em ordem alfabetica foram {sorted(times)}')
+print(f'O time do chapecoense ficou na {times.index("Chapecoense")}ª colocação')
