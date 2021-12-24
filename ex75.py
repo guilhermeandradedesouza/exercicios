@@ -9,4 +9,4 @@ for g in valores:
     if g%2==0:
         print(g,end=' ')
         a[4]+=1
-if a[4]==0:print('\033[31mnão houveram valores pares')
+if a[4]==0:print('\033[31;1mnão houveram valores pares')
