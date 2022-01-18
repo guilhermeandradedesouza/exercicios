@@ -1,6 +1,0 @@
-n=int(input('quantidade de acertos:'))
-if n>=60:print('50%')
-elif 55<=n and n<60:print('40%')
-elif 50<=n and n<55:print('30%')
-elif 40<=n and n<45:print('20%')
-elif 45<=n and n<50:print('25%')
