@@ -11,7 +11,7 @@ for a in range(int(input('quantidade de alunos:'))):
     notas_nomes[a].append(nota[:])
     nota.clear()
 print('\033[1m'+'='*15+'\nmedias\n'.upper())
-for dados in notas_nomes:print(f'Media do {dados[0]}: {(dados[1][0]+dados[1][1])/2}',('\n'+'='*15+'\033[m\n') if notas_nomes[len(notas_nomes)-1]==dados else '')
+for dados in notas_nomes:print(f'Media do {dados[0]}: {(dados[1][0]+dados[1][1])/2}\n',('='*15+'\033[m\n') if notas_nomes[len(notas_nomes)-1]==dados else '')
 sleep(1)
 if input('deseja procurar alguem? ')[0]=='s':
     procurar=[input('nome da pessoa:') for pessoa in range(int(input('quantidade de pessoas para procurar:')))]
