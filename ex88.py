@@ -6,4 +6,4 @@ for a in range(len(lista)):
     for c in range(int(input(f'Quantidade de numeros para serem sorteados no jogo {a+1}:'))):lista[a].append(randint(1,60))
 for num,c in enumerate(lista):
     print('\n' if num==0 else '',f'jogo {num+1}: {lista[num]}')
-    if num<len(lista):sleep(1)
+    sleep(1)
