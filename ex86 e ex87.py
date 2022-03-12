@@ -1,15 +1,12 @@
 matriz=[]
-localizacao=[0,0,0]
-for a in range(9):
-    matriz.append(int(input(f'digite um valor para {localizacao[:2]}:')))
-    if matriz[len(matriz)-1]%2==0:localizacao[2]+=matriz[len(matriz)-1]
-    localizacao[1]+=1
-    if localizacao[1]==3:
-        localizacao[0]+=1
-        localizacao[1]=0
+somadospares=0
+for a in range(3):
+    for b in range(3):
+        matriz.append(int(input(f'digite um valor para a posição {a},{b}:')))
+        if matriz[-1]%2==0:somadospares+=matriz[-1]
 print()
 for linhas in range(9):print(f'[ {matriz[linhas]} ]',end='\n' if (linhas+1)%3==0 else ' ')
-print(f'\nA soma da terceira coluna é {matriz[6]+matriz[7]+matriz[8]}.\nA soma dos valores pares é {localizacao[2]}.\nO maior valor da segunda linha foi {max(matriz[3:6])}.')
+print(f'\nA soma da terceira coluna é {matriz[6]+matriz[7]+matriz[8]}.\nA soma dos valores pares é {somadospares}.\nO maior valor da segunda linha foi {max(matriz[3:6])}.')
 
 '''matriz = []
 localizacao = [0,0]
