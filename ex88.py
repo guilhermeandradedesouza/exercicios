@@ -8,5 +8,5 @@ for a in range(len(lista)):
         while sorteio in lista[a]:sorteio=randint(1,60)
         lista[a].append(sorteio)
 for num,c in enumerate(lista):
-    print('\n' if num==0 else '',f'jogo {num+1}: {lista[num]}')
+    print('\n' if num==0 else '',f'jogo {num+1}: {lista[num]}') #não acho que com sorted vai ficar tão aleatorio.
     sleep(1)
