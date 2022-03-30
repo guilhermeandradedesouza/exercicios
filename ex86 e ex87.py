@@ -5,7 +5,7 @@ for a in range(3):
         matriz.append(int(input(f'digite um valor para a posição {a},{b}:')))
         if matriz[-1]%2==0:somadospares+=matriz[-1]
 print(f'{30*"-+-": ^30}')
-for linhas in range(9):print(f'[ {matriz[linhas]} ]',end='\n' if (linhas+1)%3==0 else ' ')
+for linhas in range(9):print(f'[{matriz[linhas]:^3}]',end='\n' if (linhas+1)%3==0 else ' ')
 print(f'\nA soma da terceira coluna é {matriz[6]+matriz[7]+matriz[8]}.\nA soma dos valores pares é {somadospares}.\nO maior valor da segunda linha foi {max(matriz[3:6])}.')
 
 '''matriz = []
