@@ -7,7 +7,7 @@ for a in range(int(input('quantidade de alunos:'))):
     g=input('nome:')
     notas_nomes.append([g])
     nomes_lista.append(g)
-    for vezes in range(2):nota.append(int(input(f'Nota {vezes+1}:')))
+    for vezes in range(2):nota.append(float(input(f'Nota {vezes+1}:')))
     notas_nomes[a].append(nota[:])
     nota.clear()
 print('\033[1m'+'='*15+'\nmedias\n'.upper())
