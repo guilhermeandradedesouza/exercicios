@@ -1,7 +1,7 @@
 from random import randint
 from time import sleep
 def sortear():
-    aleatorio=[randint(0,10) for vezes in range(5)]
+    aleatorio=[randint(1,10) for vezes in range(5)]
     print('sorteando valores:')
     for num in aleatorio:
         print(num,end=' ')
