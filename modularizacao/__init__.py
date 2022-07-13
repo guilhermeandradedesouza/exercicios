@@ -1,0 +1,1 @@
+'''dicionário para execícios de modularização em python'''
