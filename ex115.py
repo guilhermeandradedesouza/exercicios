@@ -18,7 +18,9 @@ while opcao!=3:
         for pontos in range(35):
             print('.',end='')
             sp(0.4)
-    if opcao==2:cadastrar()
-    if opcao==1:
+    elif opcao==2:
+        print()
+        cadastrar()
+    elif opcao==1:
         print('\n'+aleatorizar()*30+'\npessoas cadastradas\n'.upper()+aleatorizar()*30,end='')
         listar()
